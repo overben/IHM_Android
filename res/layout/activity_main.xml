@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="25dip" 
+	    android:layout_marginRight="25dip"
+	>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name:"
+        android:gravity="center"
+         />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+        android:hint="@string/login" />
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="25dip" 
+    	android:layout_marginRight="25dip"
+	    >
+    
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="Password:  " />
+	    <EditText android:id="@+id/password"
+	 		android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/password" />
+    
+    </LinearLayout>
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="25dip" 
+    	android:layout_marginRight="25dip"
+	    >
+    <Button 
+      android:id="@+id/calcul"
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:text="Cancel"
+      android:layout_weight="1"
+      android:onClick="cancel"
+    />
+    <Button 
+      android:id="@+id/calcul"
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:text="Login"
+      android:layout_weight="5"
+      android:onClick="connect"
+    />
+    
+    </LinearLayout>
+    
+</LinearLayout>
